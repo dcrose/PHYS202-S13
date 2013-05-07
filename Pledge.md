@@ -8,5 +8,5 @@ I pledge on my honor that I have not given or received any unauthorized assistan
 examinations in this course. 
 
 
-    Signed: Dakota Rose
-    Dated: May 7th, 2013
+   Signed: Dakota Rose
+   Dated: May 7th, 2013

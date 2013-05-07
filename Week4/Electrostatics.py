@@ -11,3 +11,10 @@ def dipolePotential(x,y,q,d):
     k = 8.98755*10**9;
     Vdipole = (k*q/(y**2+(x-(d/2))**2)**(1/2.))-(k*q/(y**2+(x+(d/2))**2)**(1/2.))
     return Vdipole
+
+def pointField(x,y,q,Xq,Yq):
+    """Takes as arguments the arrays (x,y), a charge q, and position (Xq,Yq) and returns a tuple of the electric field components (Ex,Ey)."""
+    k = 8.98755*10**9
+    Ex = (k*q*(x-Xq))/(((x-Xq)**2 + (y-Yq)**2)**(1/2))
+    Ey = (k*q*(y-Yq))/(((x-Xq)**2 + (y-Yq)**2)**(1/2))
+    return (Ex,Ey)

@@ -1,0 +1,295 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     11132,        286]
+NotebookOptionsPosition[     10510,        260]
+NotebookOutlinePosition[     10887,        277]
+CellTagsIndexPosition[     10844,        274]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"LL", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mm", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[HBar]", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"psi", "[", 
+    RowBox[{"nnx_", ",", "nny_", ",", "xx_", ",", "yy_"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"Sqrt", "[", 
+     RowBox[{"2", "/", "LL"}], "]"}], 
+    RowBox[{"Sqrt", "[", 
+     RowBox[{"2", "/", "LL"}], "]"}], 
+    RowBox[{"Sin", "[", 
+     RowBox[{"nnx", " ", "Pi", " ", 
+      RowBox[{"xx", "/", "LL"}]}], "]"}], 
+    RowBox[{"Sin", "[", 
+     RowBox[{"nny", " ", "Pi", " ", 
+      RowBox[{"yy", "/", "LL"}]}], "]"}]}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot3D", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"psi", "[", 
+       RowBox[{"nnx", ",", "nny", ",", "xx", ",", "yy"}], "]"}], "^", "2"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"xx", ",", "0", ",", "LL"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"yy", ",", "0", ",", "LL"}], "}"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Large"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"nnx", ",", "1", ",", "\"\<nx\>\""}], "}"}], ",", "1", ",", 
+     "10", ",", "1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Label\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"nny", ",", "1", ",", "\"\<ny\>\""}], "}"}], ",", "1", ",", 
+     "10", ",", "1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Label\>\""}]}], "}"}]}], 
+  "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.577108214797284*^9, 3.5771082611485357`*^9}, {
+  3.577108341539405*^9, 3.577108687163694*^9}, {3.577108721217626*^9, 
+  3.577108735725741*^9}, {3.577108878869423*^9, 3.577108979830139*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`nnx$$ = 1, $CellContext`nny$$ = 1, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`nnx$$], 1, "nx"}, 1, 10, 1}, {{
+       Hold[$CellContext`nny$$], 1, "ny"}, 1, 10, 1}}, Typeset`size$$ = {
+    720., {291., 298.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`nnx$2591$$ = 
+    0, $CellContext`nny$2592$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`nnx$$ = 1, $CellContext`nny$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`nnx$$, $CellContext`nnx$2591$$, 0], 
+        Hold[$CellContext`nny$$, $CellContext`nny$2592$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot3D[$CellContext`psi[$CellContext`nnx$$, $CellContext`nny$$, \
+$CellContext`xx, $CellContext`yy]^2, {$CellContext`xx, 
+         0, $CellContext`LL}, {$CellContext`yy, 0, $CellContext`LL}, 
+        ImageSize -> Large], 
+      "Specifications" :> {{{$CellContext`nnx$$, 1, "nx"}, 1, 10, 1, 
+         Appearance -> "Label"}, {{$CellContext`nny$$, 1, "ny"}, 1, 10, 1, 
+         Appearance -> "Label"}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{775., {363., 370.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.577108689697115*^9, {3.577108727831958*^9, 3.5771087373591013`*^9}, {
+   3.577108910089939*^9, 3.577108980439609*^9}, 3.5771109093966627`*^9, 
+   3.577119971653068*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.577108251443084*^9, 3.5771082521860523`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.577108384569975*^9, 3.577108385536284*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"pl", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"psi", "[", 
+           RowBox[{"nnx", ",", "nny", ",", "xx", ",", "yy"}], "]"}], "+", 
+          RowBox[{"ss", " ", 
+           RowBox[{"psi", "[", 
+            RowBox[{"nny", ",", "nnx", ",", "xx", ",", "yy"}], "]"}]}]}], 
+         ")"}], "/", 
+        RowBox[{"Sqrt", "[", "2", "]"}]}], ")"}], "^", "2"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"xx", ",", "0", ",", "LL"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"yy", ",", "0", ",", "LL"}], "}"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Large"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"nnx", ",", "1", ",", "\"\<nx\>\""}], "}"}], ",", "1", ",", 
+     "10", ",", "1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Label\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"nny", ",", "1", ",", "\"\<ny\>\""}], "}"}], ",", "1", ",", 
+     "10", ",", "1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Label\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"ss", ",", "0", ",", "\"\<symmetry\>\""}], "}"}], ",", 
+     RowBox[{"-", "1"}], ",", "1", ",", "1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Label\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"pl", ",", 
+     RowBox[{"{", 
+      RowBox[{"Plot3D", ",", "ContourPlot", ",", "DensityPlot"}], "}"}]}], 
+    "}"}]}], "\[IndentingNewLine]", "]"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`nnx$$ = 7, $CellContext`nny$$ = 
+    9, $CellContext`pl$$ = Plot3D, $CellContext`ss$$ = -1, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`nnx$$], 1, "nx"}, 1, 10, 1}, {{
+       Hold[$CellContext`nny$$], 1, "ny"}, 1, 10, 1}, {{
+       Hold[$CellContext`ss$$], 0, "symmetry"}, -1, 1, 1}, {
+      Hold[$CellContext`pl$$], {Plot3D, ContourPlot, DensityPlot}}}, 
+    Typeset`size$$ = {720., {293., 300.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`nnx$2555$$ = 0, $CellContext`nny$2556$$ = 
+    0, $CellContext`ss$2557$$ = 0, $CellContext`pl$2558$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`nnx$$ = 1, $CellContext`nny$$ = 
+        1, $CellContext`pl$$ = Plot3D, $CellContext`ss$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`nnx$$, $CellContext`nnx$2555$$, 0], 
+        Hold[$CellContext`nny$$, $CellContext`nny$2556$$, 0], 
+        Hold[$CellContext`ss$$, $CellContext`ss$2557$$, 0], 
+        Hold[$CellContext`pl$$, $CellContext`pl$2558$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> $CellContext`pl$$[(($CellContext`psi[$CellContext`nnx$$, \
+$CellContext`nny$$, $CellContext`xx, $CellContext`yy] + $CellContext`ss$$ \
+$CellContext`psi[$CellContext`nny$$, $CellContext`nnx$$, $CellContext`xx, \
+$CellContext`yy])/Sqrt[2])^2, {$CellContext`xx, 
+         0, $CellContext`LL}, {$CellContext`yy, 0, $CellContext`LL}, 
+        ImageSize -> Large], 
+      "Specifications" :> {{{$CellContext`nnx$$, 1, "nx"}, 1, 10, 1, 
+         Appearance -> "Label"}, {{$CellContext`nny$$, 1, "ny"}, 1, 10, 1, 
+         Appearance -> "Label"}, {{$CellContext`ss$$, 0, "symmetry"}, -1, 1, 
+         1, Appearance -> "Label"}, {$CellContext`pl$$, {
+         Plot3D, ContourPlot, DensityPlot}}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{775., {398., 405.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.5771090238174953`*^9, 3.5771109367527523`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Plot3D", "::", "plln"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Limiting value \[NoBreak]\\!\\(LL\\)\[NoBreak] in \
+\[NoBreak]\\!\\({xx, 0, LL}\\)\[NoBreak] is not a machine-sized real number. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/plln\\\", \
+ButtonNote -> \\\"Plot3D::plln\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.577119964613493*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Plot3D", "::", "plln"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Limiting value \[NoBreak]\\!\\(LL\\)\[NoBreak] in \
+\[NoBreak]\\!\\({xx, 0, LL}\\)\[NoBreak] is not a machine-sized real number. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/plln\\\", \
+ButtonNote -> \\\"Plot3D::plln\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.577119966807275*^9}]
+}, Open  ]]
+},
+WindowSize->{1676, 1002},
+WindowMargins->{{Automatic, 0}, {Automatic, 4}},
+Magnification->1.25,
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 1949, 53, 225, "Input"],
+Cell[2531, 77, 2190, 43, 787, "Output"]
+}, Open  ]],
+Cell[4736, 123, 94, 1, 35, "Input"],
+Cell[4833, 126, 92, 1, 35, "Input"],
+Cell[CellGroupData[{
+Cell[4950, 131, 1733, 48, 162, "Input"],
+Cell[6686, 181, 2790, 52, 823, "Output"],
+Cell[9479, 235, 506, 10, 29, "Message"],
+Cell[9988, 247, 506, 10, 29, "Message"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
